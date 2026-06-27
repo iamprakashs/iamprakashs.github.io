@@ -1,0 +1,94 @@
+:root {
+  --bg: #05060a;
+  --surface: rgba(13, 15, 24, 0.76);
+  --surface-strong: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.1);
+  --text: #b8becc;
+  --text-muted: #828899;
+  --text-strong: #f7f4ee;
+  --accent: #8fffe9;
+  --shadow: 0 24px 90px rgba(0, 0, 0, 0.36);
+  --font:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+
+  color: var(--text);
+  background: var(--bg);
+  font-family: var(--font);
+  font-synthesis: none;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at top left, rgba(139, 124, 255, 0.22), transparent 34rem),
+    radial-gradient(circle at 85% 12%, rgba(85, 255, 214, 0.13), transparent 28rem),
+    var(--bg);
+  background-size: 42px 42px, 42px 42px, auto, auto, auto;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.08), transparent 34%),
+    radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.08), transparent 38%);
+  mask-image: linear-gradient(to bottom, black, transparent 86%);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(143, 255, 233, 0.26);
+  color: var(--text-strong);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
