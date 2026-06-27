@@ -7,7 +7,7 @@ const profile = {
   location: 'India',
   email: 'hello@example.com',
   githubUsername: 'iamprakashs',
-  tagline: 'I build intelligent systems that turn complex data into useful products.',
+  tagline: 'I lead AI/ML systems from idea to production.',
   intro:
     'A personal portfolio for AI/ML leadership, applied research, product thinking, and engineering work that moves from prototype to production.',
   availability: 'Open to AI/ML leadership, research, and product collaborations',
